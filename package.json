@@ -1,0 +1,26 @@
+{
+  "name": "wintersmith-nap",
+  "version": "0.0.1",
+  "description": "Minimalistic plugin to connect wintersmith with nap",
+  "main": "wintersmith-nap.coffee",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/etabits/wintersmith-nap.git"
+  },
+  "keywords": [
+    "wintersmith",
+    "wintersmith-plugin",
+    "nap"
+  ],
+  "author": "Hasan Arous",
+  "license": "GPL2",
+  "bugs": {
+    "url": "https://github.com/etabits/wintersmith-nap/issues"
+  },
+  "dependencies": {
+    "nap": ">=0.7.11"
+  }
+}
