@@ -3,8 +3,8 @@ nap = require 'nap'
 module.exports = (env, callback) ->
 
   roots =
-    contents: env.config.contents or './contents'
-    output: env.config.output or './build'
+    contents: env.config.contents
+    output: env.config.output
 
   napCfg = env.config.nap
 
