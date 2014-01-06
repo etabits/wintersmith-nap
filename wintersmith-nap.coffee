@@ -17,7 +17,7 @@ module.exports = (env, callback) ->
   preview = 'preview' == process.argv[2]
 
   napCfg.mode      = if preview then 'development' else 'production'
-  napCfg.publicDir = if preview then roots.contents else '/build'
+  napCfg.publicDir = if preview then roots.contents else roots.output
 
   nap napCfg
 
