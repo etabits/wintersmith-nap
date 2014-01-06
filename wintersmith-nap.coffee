@@ -21,20 +21,8 @@ module.exports = (env, callback) ->
 
   nap napCfg
 
-  if preview # development
-    createNapWrapper = (ext) ->
-      (section) ->
-        nap[ext](section).replace(/\/assets\/contents\//g, '/')
-
-    global.nap = {}
-    global.nap.css = createNapWrapper 'css'
-    global.nap.js = createNapWrapper 'js'
-    global.nap.jst = createNapWrapper 'jst'
-
-  else # production
-    nap.package()
-    global.nap = nap
-
+  nap.package() unless preview
+  global.nap = nap
 
   # we're done
   callback()
