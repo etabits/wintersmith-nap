@@ -21,7 +21,7 @@ module.exports = (env, callback) ->
     createNapWrapper = (ext) ->
       (section) ->
         nap[ext](section).replace(/\/assets\/contents\//g, '/')
-    
+
     global.nap = {}
     global.nap.css = createNapWrapper 'css'
     global.nap.js = createNapWrapper 'js'
