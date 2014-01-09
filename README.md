@@ -4,6 +4,14 @@ wintersmith-nap
 Minimalistic plugin to connect wintersmith with nap
 
 ## Usage
+
+### Installation
+```sh
+npm install wintersmith-nap
+```
+Or alternatively, define it as a dependency in your wintersmith's project `package.json`
+
+### Configuration
 In wintersmith's `config.json`, add `wintersmith-nap` to your plugins array, and provide nap config inside `nap` key:
 
 ```json
@@ -24,7 +32,7 @@ In wintersmith's `config.json`, add `wintersmith-nap` to your plugins array, and
   }
 }
 ```
-
+### Embedding into template
 Next, in your template files, probably layout, you can call `nap` to output your assets links:
 
 ```jade
