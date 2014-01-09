@@ -1,0 +1,16 @@
+{
+  "plugins": [
+    "./../index-dev.js"
+  ],
+  "nap": {
+    "assets": {
+      "css": {
+        "main": ["/css/*"]
+      },
+      "js": {
+        "main": ["/js/*"]
+      }
+    }
+  }
+
+}
