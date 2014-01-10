@@ -26,9 +26,10 @@ module.exports = (env, callback) ->
   
   if preview # development
     # Refer to https://github.com/etabits/wintersmith-nap/pull/3#issuecomment-31646159
+    assetsRx = new RegExp(path.resolve('/assets/', roots.contents)+'/', 'g')
     createNapWrapper = (ext) ->
       (section) ->
-        nap[ext](section).replace(/\/assets\/contents\//g, '/')
+        nap[ext](section).replace(assetsRx, '/')
 
     env.locals.nap = {}
     env.locals.nap.css = createNapWrapper 'css'
