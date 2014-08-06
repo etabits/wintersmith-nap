@@ -1,6 +1,6 @@
 {
   "name": "wintersmith-nap",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Minimalistic plugin to connect wintersmith with nap",
   "main": "lib/wintersmith-nap.js",
   "scripts": {
