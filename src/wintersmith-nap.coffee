@@ -17,7 +17,7 @@ module.exports = (env, callback) ->
         napCfg.assets[ext][section][index] = roots.contents + napCfg.assets[ext][section][index]
 
   # Setting various `nap` configs
-  napCfg.appDir    = env.workDir
+  napCfg.appDir    =  path.resolve(env.workDir, roots.contents);
   napCfg.mode      = if preview then 'development' else 'production'
   napCfg.publicDir = if preview then roots.contents else roots.output
 
