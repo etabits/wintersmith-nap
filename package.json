@@ -17,11 +17,11 @@
     "nap"
   ],
   "dependencies": {
-    "nap": "~0.8.1"
+    "nap": "0.8.x"
   },
   "devDependencies": {
     "coffee-script": ">1.5",
-    "vows": "0.7.x",
+    "vows": "0.8.x",
     "wintersmith": "2.x"
   },
   "author": "Hasan Arous",
